@@ -1,0 +1,36 @@
+<!Doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="recipe.css"/>
+  </head>
+  <body>
+    <div id="recipe-app">
+      <div class="login hidden">
+        <label>Username: <input type="text"></label>
+        <button type="button">Login</button>
+        <div class="login-status"></div>
+      </div>
+      <div class="logout hidden"><button type="button">Logout</button></div>
+      <div class="main-view">
+        <div class="recipe-list-view hidden">
+          This is a list of the recipes:
+          <ul class="recipes"></ul>
+          <button class="add-recipe hidden">Add Recipe</button>
+        </div>
+        <div class='add-recipe-view hidden'>
+          <input class="title-to-add" placeholder='title'></input>
+          <textarea class="ingredients-to-add" placeholder='ingredients'></textarea>
+          <textarea class="instructions-to-add" placeholder='instructions'></textarea>
+          <button class="add-recipe-btn">Add</button>
+          <button class="return-home">Return to Home</button>
+        </div>
+        <div class='recipe-detail-view hidden'>
+          <div class="recipe-detail"></div>
+          <button class="return-home">Return to Home</button> 
+        </div>
+      </div>
+    </div>
+    <script src="recipe.js"></script>
+  </body>
+</html>
+

@@ -1,0 +1,39 @@
+#user {
+  visibility: hidden;
+}
+
+.greeting {
+  text-align: right;
+}
+
+.displayPanel {
+  display: flex;
+  flex-direction: row;
+}
+
+.validWordList {
+  text-align: center;
+  flex-grow: 1;
+  height: 70vh;
+  overflow: auto;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.guessHistoryList {
+  text-align: center;
+  flex-grow: 1;
+}
+
+.guessPanel {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.resultPanel {
+  text-align: center;
+  margin-top: 3em;
+}
