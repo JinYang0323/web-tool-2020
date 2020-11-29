@@ -1,0 +1,32 @@
+body {
+	font-family: sans-serif;
+}
+
+#todo-app .login,
+#todo-app .logged-in,
+#todo-app .logout {
+	text-align: center;
+	margin-top: 20%;
+}
+
+#todo-app .login-status {
+	margin-top: 5%;
+	color: red;
+}
+
+#todo-app .login.hidden {
+	display: none;
+}
+#todo-app .logged-in.hidden {
+	display: none;
+}
+
+#todo-app .todo,
+#todo-app button,
+#todo-app .delete {
+	cursor: pointer;
+}
+
+#todo-app .todo.complete {
+	text-decoration: line-through;
+}
