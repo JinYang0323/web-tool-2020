@@ -1,66 +1,64 @@
 body {
-  background-color: lightsteelblue;
+    background-color: lightsteelblue;
 }
 
 #chat-app {
-  font-size: 1.5em;
-  margin: 10%;
-  background-color: white;
-  height: 60vh;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+    margin: 5% 10%;
+    background-color: white;
+    height: 80vh;
+    display: flex;
 }
 
-.display-panel {
-  grid-column: 1 / 6;
-  grid-row: 1 / 3;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+.user-panel {
+    width: 20%;
+    border-right: 1px solid #d3d3d3;
 }
 
-.users {
-  grid-column: 1;
-  grid-row: 1;
+.message-panel {
+    width: 80%;
 }
 
 .user {
-  margin: 5% 20%;
+    margin: 5% 20%;
 }
 
 .messages {
-  border-left: solid #d3d3d3 1px;
-  padding-top: 1em;
-  margin: 0;
-  grid-column: 2 / 6;
-  grid-row: 1;
+    padding-top: 2rem;
+    height: 80%;
+    overflow: scroll;
 }
 
 .message {
-  margin-top: 1em;
-  display: grid;
-  grid-gap: 0.5em;
+    margin-top: 1em;
+    display: grid;
+    grid-gap: 0.5em;
 }
 
-.timestamp {
-  text-align: center;
+.message-timestamp {
+    text-align: center;
 }
 
-.text {
-  background-color: lavender;
-  border-radius: 1em;
-  padding: 0.2em 1em;
+.message-text {
+    background-color: lavender;
+    border-radius: 1em;
+    padding: 0.2em 1em;
 }
 
-.outgoing {
-  border-left: solid #d3d3d3 1px;
-  border-top: solid #d3d3d3 1px;
-  grid-column: 2 / 6;
-  grid-row: 3;
+.outgoing-panel {
+    border-top: solid #d3d3d3 1px;
 }
 
 #text {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  border: none;
+    width: 100%;
+    height: 85%;
+    background-color: transparent;
+    border: none;
+}
+
+.send-button {
+    float: right;
+}
+
+.hidden {
+    display: none;
 }
