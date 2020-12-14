@@ -16,7 +16,6 @@ function compare(word, guess) {
     return common;
 }
 
-// create a char count map to save the characters and their count
 function createCountMap(word) {
     let charToCount = {};
     word.split("").forEach((chr) => {
