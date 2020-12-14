@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+#chat-app {
+    margin: 5% 20%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display-panel {
+    display: flex;
+    flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.users {
+    border: 1px solid black;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.messages {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: -webkit-fill-available;
+    height: 80vh;
+    overflow: auto;
 }
 
-.App-link {
-  color: #61dafb;
+.message {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.message:hover {
+    background-color: #bada55;
+}
+
+.meta-info {
+    min-width: 250px;
+    background-color: lightgrey;
+    padding: 5px;
+}
+
+.message-text {
+    padding-left: 10px;
+}
+
+.login-panel {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.status {
+    color: red;
+    text-align: center;
+}
+
+.logout {
+    float: right;
+}
+
+.outgoing input {
+    width: 53vw;
 }

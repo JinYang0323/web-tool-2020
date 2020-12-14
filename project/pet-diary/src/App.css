@@ -1,0 +1,272 @@
+.loader {
+    border: 0.3rem solid #f3f3f3;
+    border-top: 0.3rem solid #ff5338;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    animation: spin 2s linear infinite;
+    margin: 20% 50%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.login-page {
+    text-align: center;
+    border: 1px solid #ff5338;
+    margin: 0 30%;
+    padding: 5%;
+    height: 100vh;
+}
+
+.login-page-logo-panel {
+    font-size: 32px;
+    color: #ff5338;
+    margin-top: 7%;
+}
+
+.login-page-logo-panel-label {
+    margin-left: 0.5%;
+}
+
+.login-page-prompt-panel {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    font-weight: bold;
+}
+
+.login-page-input-panel {
+    margin-top: 7rem;
+}
+
+.login-page-input-panel input {
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    border: 1px solid;
+}
+
+.login-page-login-panel {
+    margin-top: 1%;
+}
+
+.login-page-login-panel button {
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: #ff5338;
+    color: white;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.login-page-login-panel button:disabled {
+    background-color: #f59b8d;
+}
+
+.error-panel {
+    margin-top: 1%;
+    color: red;
+}
+
+.main-nav {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 1%;
+    height: 10vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.main-nav-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.main-nav-logo-label {
+    color: #ff5338;
+    margin-left: 0.5rem;
+}
+
+.main-nav li {
+    display: inline;
+    cursor: pointer;
+    list-style-type: none;
+    margin-right: 60%;
+}
+
+.main-nav-title-selected {
+    font-weight: 700;
+    color: #ff5338;
+}
+
+.main-nav-logout {
+    margin-left: 65%;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-top: 10vh;
+}
+
+.profile-page {
+    border-left: 1px solid #ff5338;
+    border-right: 1px solid #ff5338;
+    margin: 0 30%;
+    height: 80vh;
+    padding: 3rem;
+}
+
+.profile-page button {
+    float: right;
+}
+
+.encyclopedia-section-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.encyclopedia-section-content {
+    margin: 0 3rem;
+}
+
+.encyclopedia-breed-name {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.profile-info-item,
+.encyclopedia-breed-info-item {
+    margin-bottom: 1rem;
+}
+
+.encyclopedia-breed-height-item,
+.encyclopedia-breed-weight-item {
+    width: 6rem;
+    display: inline-block;
+}
+
+.encyclopedia-breed-info-item button {
+    width: 4rem;
+}
+
+.profile-info-item label,
+.encyclopedia-breed-info label {
+    display: inline-block;
+    width: 10rem;
+    font-weight: bold;
+}
+
+.encyclopedia-vaccine-label {
+    font-size: 1.5rem;
+}
+
+.encyclopedia-vaccine-item {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.encyclopedia-vaccine-timetable {
+    border-collapse: collapse;
+}
+
+.encyclopedia-vaccine-timetable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.encyclopedia-vaccine-timetable tr:hover {
+    background-color: #ddd;
+}
+
+.encyclopedia-vaccine-timetable th {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: left;
+    background-color: antiquewhite;
+}
+
+.encyclopedia-vaccine-timetable th,
+.encyclopedia-vaccine-timetable td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+.expense-page {
+    margin: 5% 30% 0 30%;
+}
+
+.expense-page button {
+    background-color: white;
+    color: #ff5338;
+    border: none;
+    font-size: 1.2rem;
+    margin-left: 24rem;
+}
+
+.expense-page li {
+    list-style-type: none;
+}
+
+.expense-item {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid grey;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+.expense-item-date {
+    border: 1px solid #ff5338;
+    border-radius: 0.2rem;
+}
+
+.expense-item-group {
+    display: flex;
+    flex-direction: column;
+    width: 25rem;
+}
+
+.expense-item-note,
+.expense-item-category {
+    display: inline-block;
+    width: 15rem;
+}
+
+.expense-item-note {
+    color: grey;
+}
+
+.expense-item-cost {
+    font-weight: bold;
+}
+
+.expense-item-prompt {
+    margin-bottom: 1rem;
+}
+
+.expense-item-label {
+    display: inline-block;
+    width: 7rem;
+    margin-bottom: 1rem;
+}
+
+.expense-add-item {
+    padding: 2rem 0 0 6rem;
+}
